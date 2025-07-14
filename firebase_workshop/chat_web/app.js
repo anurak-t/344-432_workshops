@@ -278,19 +278,3 @@ setInterval(() => {
     // อัพเดทเวลาถ้าจำเป็น
   });
 }, 60000);
-
-// Web Notification (Firebase Cloud Messaging)
-let messaging = null;
-try {
-  messaging = firebase.messaging();
-  messaging.onMessage(payload => {
-    if (Notification.permission === 'granted') {
-      new Notification(payload.notification.title, {
-        body: payload.notification.body,
-        icon: payload.notification.icon
-      });
-    }
-  });
-} catch (e) {
-  // messaging อาจไม่รองรับบน localhost
-}

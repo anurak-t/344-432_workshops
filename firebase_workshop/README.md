@@ -2,7 +2,8 @@
 
 ## เป้าหมาย
 - เข้าใจความแตกต่างระหว่าง Firebase Realtime Database และ Firestore
-- ทดลองใช้บริการ Auth, Hosting, Web Notification
+- รู้จัก Firebase และ บริการต่างๆ ที่เกี่ยวข้อง
+- สร้างเว็บแชทด้วย Firebase ที่ใช้ Realtime Database, Firestore, authentication, และ Hosting
 
 ---
 
@@ -29,7 +30,6 @@
 - เก็บ profile ผู้ใช้ใน Firestore
 - สร้างห้องแชท/แชทตรง
 - เก็บข้อความแชทใน Realtime Database
-- เชื่อม Web Notification
 - Deploy ด้วย Firebase Hosting
 
 ### โครงสร้างโปรเจกต์
@@ -41,17 +41,16 @@ firebase_workshop/
     style.css
     app.js
     firebase-config.js
-  deploy-instructions.md
 ```
 
 ---
 
 ## ขั้นตอน Lab
-1. สร้าง Firebase Project และเปิดใช้งาน Auth, Firestore, Realtime Database, Hosting, Cloud Messaging
+1. สร้าง Firebase Project และเปิดใช้งาน Auth, Firestore, Realtime Database, Hosting
 2. ตั้งค่า Google Login ใน Firebase Auth
 3. Clone ตัวอย่างโค้ดใน `chat_web/`
 4. ตั้งค่า `firebase-config.js` ด้วย config ของโปรเจกต์
-5. ทดสอบ Login, สร้างห้อง, ส่งข้อความ, รับ noti
+5. ทดสอบ Login, สร้างห้อง, ส่งข้อความ
 6. Deploy ขึ้น Firebase Hosting
    - ติดตั้ง Firebase CLI (ครั้งแรก):
      ```

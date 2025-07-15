@@ -17,8 +17,6 @@ This is a starter project for building applications with Node.js.
 
 3. **Run the application:**
     ```bash
-    npm start 
-    or 
     node index.js
     ```
 

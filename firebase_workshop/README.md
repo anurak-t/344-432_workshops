@@ -65,7 +65,7 @@ firebase_workshop/
      firebase init hosting
      ```
      - เลือกโปรเจกต์ Firebase ที่ต้องการ
-     - เลือก public directory เป็น `chat_web`
+     - เลือก public directory เป็น `.`
      - ตอบ No สำหรับ SPA rewrite
      - ตอบ No สำหรับ GitHub Action
      - ตอบ No สำหรับ Overwrite index.html

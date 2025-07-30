@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MongoDB Webboard Workshop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Webboard Workshop</h1>
+    <form id="postForm">
+      <input type="text" id="title" placeholder="หัวข้อกระทู้" required />
+      <textarea id="content" placeholder="เนื้อหา" rows="3" required></textarea>
+      <input type="text" id="author" placeholder="ชื่อผู้ตั้งกระทู้" required />
+      <input type="text" id="tags" placeholder="แท็ก (คั่นด้วย comma)" />
+      <button type="submit">โพสต์กระทู้</button>
+    </form>
+    <div class="aggregate" id="aggregateTags"></div>
+    <div id="tagFilterInfo" style="margin:10px 0;color:#007bff;"></div>
+    <div class="post-list" id="postList"></div>
+    <div id="pagination" style="text-align:center;margin:20px 0;"></div>
+    <!-- script moved to app.js -->
+  </div>
+
+  <!-- Modal แสดงรายละเอียดกระทู้ -->
+  <div id="modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.3);z-index:10;align-items:center;justify-content:center;">
+    <div style="background:#fff;padding:24px 20px;border-radius:8px;max-width:500px;width:95vw;position:relative;">
+      <button id="closeModal" style="position:absolute;top:8px;right:12px;font-size:1.2rem;background:none;border:none;cursor:pointer;">&times;</button>
+      <div id="modalContent"></div>
+      <form id="addCommentForm" style="display:none;margin-top:16px;">
+        <div class="add-comment">
+          <input type="text" id="commentUser" placeholder="ชื่อของคุณ" required />
+          <input type="text" id="commentText" placeholder="แสดงความคิดเห็น..." required />
+          <button type="submit">คอมเมนต์</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

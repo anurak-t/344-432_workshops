@@ -43,5 +43,5 @@
 1. Open your terminal.
 2. Navigate to the lab folder:
    ```bash
-   cd ./example
+   cd ./caching_workshop
 3. Follow to README.md
